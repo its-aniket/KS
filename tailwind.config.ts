@@ -11,7 +11,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'curve-dark': 'rgb(41, 41, 41)',
+        primary: "#455ce9",
       },
+      transitionDuration: {
+        '400': '400ms',
+      },
+      spacing: {
+        '99': '99px',
+      },
+     
     },
   },
   plugins: [],
