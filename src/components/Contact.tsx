@@ -152,7 +152,7 @@ const Contact: React.FC<ContactProps> = ({ className }) => {
             <RoundedButton
               onClick={() =>
                 window.open(
-                  "https://www.linkedin.com/in/your-profile",
+                  "https://www.linkedin.com/in/kaustubh-shevade-96603375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
                   "_blank"
                 )
               }
