@@ -4,6 +4,7 @@ import { useInView, motion, useTransform, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import Rounded from './RoundedButton';
 import RoundedButton from './RoundedButton';
+import Link from 'next/link';
 
 interface DescriptionProps {}
 
@@ -94,9 +95,10 @@ const Description: React.FC<DescriptionProps> = () => {
             mass: 0.5
           }}
         >
+          <Link href={`/about`} passHref>
           <RoundedButton 
             className="w-[12rem] h-[12rem] lg:w-[180px] lg:h-[180px] bg-[#1c1d20] text-white rounded-full flex items-center justify-center cursor-pointer"
-          >
+            >
             <motion.p 
               className="text-base font-light relative z-[1]"
               whileHover={{ scale: 1.1 }}
@@ -105,10 +107,11 @@ const Description: React.FC<DescriptionProps> = () => {
                 stiffness: 400,
                 damping: 10
               }}
-            >
+              >
               About me
             </motion.p>
           </RoundedButton>
+          </Link>
         </motion.div>
       </motion.div>
     </div>
