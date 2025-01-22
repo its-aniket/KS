@@ -1,14 +1,13 @@
 'use client'
-import React, { useEffect, useRef, ReactElement } from 'react';
+import React, { useEffect, useRef, ReactElement, forwardRef } from 'react';
 import gsap from 'gsap';
 
 interface MagneticProps {
   children: ReactElement;
 }
 
-export default function Magnetic({ children }: MagneticProps) {
-  // Using HTMLElement as a base type, but you can be more specific if needed
-  const magnetic = useRef<HTMLElement | null>(null);
+const Magnetic = forwardRef<HTMLDivElement, MagneticProps>(({ children }) => {
+  const magnetic = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!magnetic.current) return;
@@ -35,12 +34,15 @@ export default function Magnetic({ children }: MagneticProps) {
     element.addEventListener("mousemove", handleMouseMove);
     element.addEventListener("mouseleave", handleMouseLeave);
 
-    // Cleanup function to remove event listeners
     return () => {
       element.removeEventListener("mousemove", handleMouseMove);
       element.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 
-  return React.cloneElement(children, { ref: magnetic });
-}
+  return <div ref={magnetic}>{children}</div>;
+});
+
+Magnetic.displayName = 'Magnetic';
+
+export default Magnetic;

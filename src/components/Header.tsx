@@ -6,24 +6,21 @@ import { AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "./Navbar";
-import Rounded from "./RoundedButton";
 import Magnetic from "./Magnetic";
 import { navitems } from "../constants";
 import Link from "next/link";
 import RoundedButton from "./RoundedButton";
 
-interface HeaderProps {}
 
-const Header: React.FC<HeaderProps> = () => {
+
+const Header: React.FC = () => {
   const header = useRef<HTMLDivElement>(null);
   const [isActive, setIsActive] = useState<boolean>(false);
-  const pathname = usePathname();
   const button = useRef<HTMLDivElement>(null);
-  const menu = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (isActive) setIsActive(false);
-  }, [pathname]);
+  }, []);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -96,7 +93,7 @@ const Header: React.FC<HeaderProps> = () => {
 
 
       {/* Menu Button */}
-<div ref={button} className="fixed right-0 z-50 scale-0">
+<div ref={button} className="fixed top-0 right-0 z-50 scale-0">
   <RoundedButton
     onClick={() => setIsActive(!isActive)}
     className="relative m-5 h-16 w-16 rounded-full bg-[#1c1d20] cursor-pointer flex items-center justify-center"

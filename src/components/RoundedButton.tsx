@@ -44,7 +44,7 @@ const RoundedButton: React.FC<RoundedButtonProps> = ({
       if (timeoutId) clearTimeout(timeoutId);
       timeline.current?.kill();
     };
-  }, []);
+  });
 
   const manageMouseEnter = (): void => {
     if (timeoutId) clearTimeout(timeoutId);

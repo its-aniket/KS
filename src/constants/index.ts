@@ -663,3 +663,158 @@ export const navitems = [
     }  
   ];
   
+
+
+  export const NotableProject=[
+    {
+      id: 23,
+      title: "Married Student Accommodation, IIT Bombay, Mumbai",
+      slug: "Married-Student-Accommodation-IIT-Bombay-Mumbai",
+      image: "/images/img16.jpg",
+      category: "Residential",
+      aspectRatio: "",
+      description: "",
+      shortDescription: "",
+      year: 2014,
+      client: "IIT Bombay",
+      location: "Mumbai",
+      area: "",
+      builtarea: "",
+      services: ["Architecture"],
+      team: ["Amit Chaubal", "Kaustubh Shevade"],
+      gallery: [],
+      challenge: "",
+      solution: "",
+      status: "Unbuilt",
+    },
+    {
+      id: 16,
+      title: "Science Research Park, IIT Bombay, Mumbai",
+      slug: "Science-Research-Park-IIT-Bombay-Mumbai",
+      image: "/images/img9.jpg",
+      category: "Institutes",
+      aspectRatio: "4/3",
+      description:
+        "A visionary project to establish a cutting-edge Science Research Park at IIT Bombay, fostering innovation and collaboration.",
+      shortDescription:
+        "Science Research Park initiative at IIT Bombay for innovation and collaboration.",
+      year: 2016,
+      client: "IIT Bombay",
+      location: "Mumbai",
+      area: "Not Specified",
+      builtarea: "Unbuilt",
+      services: ["Conceptual Design", "Feasibility Study"],
+      team: ["Amit Chaubal", "Kaustubh Shevade"],
+      gallery: ["/images/img9/detail1.jpg", "/images/img9/detail2.jpg"],
+      challenge:
+        "Developing a research-oriented park within a bustling academic environment, adhering to space constraints.",
+      solution:
+        "Proposed a sustainable and innovative design tailored to research needs and academic synergy.",
+      status: "Unbuilt",
+    },
+    {
+      id: 9,
+      title: "Library Building For Central University of Zharkhand",
+      slug: "library-building-for-central-university-of-zharkhand",
+      image: "/images/img9.jpg",
+      category: "Institutes",
+      aspectRatio: "16/9",
+      description:
+        "A modern residential project that pushes the boundaries of contemporary living spaces.",
+      shortDescription: "Modern family home with innovative design",
+      year: 2019,
+      client: "Central University of Zharkhand",
+      location: "Ranchi, Zharkhand",
+      area: "",
+      builtarea: "",
+      services: ["Architecture"],
+      team: ["Amit Chaubal", "Kaustubh Shevade"],
+      gallery: ["/images/img4/detail1.jpg", "/images/img4/detail2.jpg"],
+      challenge:
+        "Integrating modern design while maintaining warmth and livability.",
+      solution:
+        "Used natural materials and created flowing indoor-outdoor spaces.",
+      status: "Completed",
+    },
+    {
+      id: 7,
+      title: "BARC, Mysore",
+      slug: "barc-mysore",
+      image: "/images/img7.jpg",
+      category: "Commercial",
+      aspectRatio: "4/3",
+      description:
+        "Master Plan for Technology Development Facility at BARC, Mysore, Karnataka.",
+      shortDescription:
+        "Master planning for a technology facility at BARC, Mysore.",
+      year: 2011,
+      client: "BARC, Mysore",
+      location: "Karnataka",
+      area: "5,706,068 sq ft",
+      builtarea: "",
+      services: ["Architecture"],
+      team: ["Amit Chaubal", "Kaustubh Shevade"],
+      gallery: ["/images/img7/detail1.jpg", "/images/img7/detail2.jpg"],
+      challenge: "Designing a functional technology development facility.",
+      solution:
+        "Created a comprehensive master plan meeting BARC's requirements.",
+      status: "In Progress",
+    },
+    {
+      id: 17,
+      title: "Design College, IIT Bombay, Mumbai",
+      slug: "Design-College-IIT-Bombay-Mumbai",
+      image: "/images/img10.jpg",
+      category: "Institutes",
+      aspectRatio: "4/3",
+      description:
+        "Proposed a creative and functional design for a new design college at IIT Bombay, enhancing student learning and innovation.",
+      shortDescription:
+        "Design college initiative at IIT Bombay to nurture creativity and innovation.",
+      year: 2016,
+      client: "IIT Bombay",
+      location: "Mumbai",
+      area: "Not Specified",
+      builtarea: "Unbuilt",
+      services: ["Conceptual Design", "Feasibility Study"],
+      team: ["Amit Chaubal", "Kaustubh Shevade"],
+      gallery: ["/images/img10/detail1.jpg", "/images/img10/detail2.jpg"],
+      challenge:
+        "Creating a unique identity for the design college while aligning with IIT Bombay's academic culture.",
+      solution:
+        "Developed a design emphasizing modernity, functionality, and collaborative spaces for students.",
+      status: "Unbuilt",
+    },
+    {
+      id: 2,
+      title: "Science Research Centre, IIT Bombay",
+      slug: "Science-research-center-IITBombay",
+      image: "/images/Project_2/science_research_center1.jpg",
+      category: "Institutes",
+      aspectRatio: "3/4",
+      description:
+        "A state-of-the-art commercial complex featuring modern architecture and sustainable design principles. The project seamlessly integrates work and leisure spaces, creating a dynamic environment for businesses and their employees.",
+      shortDescription:
+        "Modern commercial complex with sustainable design features",
+      year: 2016,
+      client: "IIT Bombay",
+      location: "IIT Bombay,Mumbai Maharashtra",
+      area: "1.95 Acre",
+      builtarea: "80,000 sq m",
+      services: ["Architectural Design"],
+      team: ["Kaustubh Shevade", "Amit Chaubal"],
+      gallery: [
+        "/images/Project_2/science_research_center1.jpg",
+        "/images/Project_2/science_research_center2.jpg",
+        "/images/Project_2/science_research_center3.jpg",
+        "/images/Project_2/science_research_center4.jpg",
+        "/images/Project_2/science_research_center5.jpg",
+        "/images/Project_2/science_research_center6.jpg",
+      ],
+      challenge:
+        "Creating a sustainable commercial space that maximizes natural light while maintaining energy efficiency.",
+      solution:
+        "Implemented a double-skin facade system and smart building technologies.",
+      status: "Unbuilt",
+    },
+  ]

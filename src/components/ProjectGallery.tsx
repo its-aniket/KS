@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useRef } from 'react';
-import { motion, useTransform, useScroll } from "framer-motion";
+import React, { useState } from 'react';
+import { motion } from "framer-motion";
 import Image from 'next/image';
 import { projects } from '@/constants';
 import Link from 'next/link';
@@ -8,11 +8,7 @@ import Link from 'next/link';
 const ProjectGallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [loadedImages, setLoadedImages] = useState(new Set());
-  const container = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ["start end", "end start"],
-  });
+  
   const categories = ['All', 'Commercial', 'Hotel', 'Institutes', 'Residential'];
 
   const filteredProjects = selectedCategory === 'All'
@@ -23,7 +19,6 @@ const ProjectGallery = () => {
     setLoadedImages((prev) => new Set([...prev, id]));
   };
 
-  const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
   
   return (
     <div className="relative w-full bg-white">
